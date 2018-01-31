@@ -3,12 +3,18 @@ import sql from './connection'
 import moment from 'moment'
 
 /*
-drop table Customer;
+drop table Customers;
+drop table Sellers;
+drop table Orders;
+drop Table Products;
+drop table Invoices;
+drop table Photos;
+drop table Addresses;
 
 */
 
 let { Photo, Customer } = sql.models
- 
+  
 //SEEDS
 export default async () => {
   let loc
@@ -36,7 +42,7 @@ export default async () => {
 async function getAllDerrivedAttributes(Model) {
   if ('get' in Model) Model = Model.get()
   for (let i in Model) 
-  if (typeof Model[i] === 'object')
+  if (typeof Model[i] === 'object' && Model[i])
   if ('then' in Model[i])
   Model[i] = await Model[i]
   else getAllDerrivedAttributes(Model[i])

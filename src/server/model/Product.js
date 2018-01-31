@@ -26,6 +26,9 @@ export default connection.define('Product', {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
+  type: {
+    type: Sequelize.ENUM(['cherrybean', 'greenbean', 'roastedbean'])
+  },
   photo_url: {
     type: Sequelize.VIRTUAL,
     get: async function() {

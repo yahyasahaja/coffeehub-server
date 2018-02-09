@@ -31,11 +31,11 @@ class App extends Component {
           <AppRouter />
         </ThemeProvider>
       </Provider>
-    )
+    ) 
   }
 }
 
-ReactDOM.render(
+ReactDOM.render( 
   <App />,
   document.getElementById('app')
 )

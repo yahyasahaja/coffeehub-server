@@ -1,6 +1,6 @@
 {
-  "short_name": "My First PWA",
-  "name": "My First Progressive Web App",
+  "short_name": "CoffeeHub",
+  "name": "CoffeeHub Indonesia",
   "icons": [
     {
       "src":"/icon/react-logo-192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#1abc9c",
-  "theme_color": "#1abc9c",
+  "background_color": "#a14e25",
+  "theme_color": "#a14e25",
   "display": "standalone"
 }

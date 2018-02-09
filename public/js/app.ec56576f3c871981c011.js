@@ -10018,7 +10018,7 @@ module.exports = isArguments;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var END_POINT_URL = exports.END_POINT_URL = 'http://localhost:3000';
+var END_POINT_URL = exports.END_POINT_URL = 'https://coffeehubid.herokuapp.com';
 var TOKEN = exports.TOKEN = 'coffeehub-token';
 
 exports.default = {

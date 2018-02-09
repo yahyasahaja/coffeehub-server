@@ -1,6 +1,7 @@
 // @flow
 //MODULES
 import express from 'express'
+import expressAsyncErrors from 'express-async-errors'
 import bodyParser from 'body-parser'
 import morgan from 'morgan'
 import path from 'path'
@@ -51,18 +52,19 @@ app.use(compression())
 //STATIC
 app.use(express.static('./public'))
 
-//REACT
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve('./public/index.html'))
-})
-
 //ERROR_HANDLER
 app.use((err, req, res, next) => {
   res.locals.message = err.message
   res.locals.error = req.app.get('env') === 'development' ? err : {}
+  console.log('KE SINI GAK SIH')
   
   res.status(err.status || 500)
   res.json({error: err.message})
+})
+
+//REACT
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('./public/index.html'))
 })
 
 //LISTEN TO PORT

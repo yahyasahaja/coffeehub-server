@@ -1,0 +1,109 @@
+ENDPOINT: 192.168.43.21:3000
+Request Headers:
+  Content-Type: application/json
+  Authorization: Bearer <accessToken> //if authorization is needed
+
+*notes: !<type> means required
+
+DUMMY USER -- USE THIS FOR DEVELOPMENT
+{ 
+  photo_url: '/img/customers/something.png',
+  id: 1,
+  name: 'Yahya',
+  email: 'yahya@yahya.com',
+  password: 'yahya123',
+  phone: '043298525',
+  photo_id: 1,
+  address_id: null 
+}
+
+===== SESSIONS
+POST /api/sessions/register
+{
+  email: !String,
+  password: !String,
+  name: !String,
+}
+
+POST /api/sessions/login
+{
+  email: !String,
+  password: !String,
+}
+
+
+===== PRODUCTS
+GET /api/products
+Query: {
+  offset: !Integer, //page at-offset
+  limit: !Integer //maximum result length
+}
+TODO: get all products
+Must be Authorized!
+Response {
+  products: {
+    count: !Integer,
+    rows: [
+      {
+        name: !String,
+        price: !Integer,
+        description: !String,
+        stock: !Integer,
+        type: !Enum('cherrybean', 'greenbean', 'roastbean'),
+        photo_url: String,
+        product_origin_id: Integer
+      }
+    ]
+  }
+}
+
+GET /api/products/:product_origin_id
+Query: {
+  offset: !Integer, //page at-offset
+  limit: !Integer //maximum result length
+}
+TODO: get all products filtered by product_origin_id
+Must be Authorized!
+Response {
+  products: {
+    count: !Integer,
+    rows: [
+      {
+        name: !String,
+        price: !Integer,
+        description: !String,
+        stock: !Integer,
+        type: !Enum('cherrybean', 'greenbean', 'roastbean'),
+        photo_url: String,
+        product_origin_id: Integer
+      }
+    ]
+  }
+}
+
+===== USER
+GET /api/user
+TODO: get a single authorized user data
+Must be Authorized!
+Response {
+  photo_url: '/img/customers/something.png',
+  id: !Integer,
+  name: !String,
+  email: !String,
+  password: !String,
+  phone: String,
+  photo_id: Integer,
+  address_id: Integer,
+}
+
+===== PRODUCT_ORIGINS
+GET /api/productsorigins
+TODO: get all product origins
+Response [
+  { 
+    name: !String,
+    id: !Integer,
+    photo_id: Integer,
+    photo_url: String,
+  }
+]

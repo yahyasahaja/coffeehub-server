@@ -5,32 +5,19 @@ import Sequelize from 'sequelize'
 import connection from '../connection'
 
 //USER_SCHEMA
-export default connection.define('Customer', {
+export default connection.define('ProductOrigin', {
   name: {
     type: Sequelize.STRING,
     allowNull: false,
-  },
-  email: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },
-  password: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },
-  phone: {
-    type: Sequelize.STRING,
-    allowNull: true,
   },
   photo_url: {
     type: Sequelize.VIRTUAL,
     get: async function() {
       let photo = await connection.models.Photo.findOne({where: {id: this.get('photo_id')}})
-      
       if (!photo) return null
-      return `/img/customers/${photo.filename}`
+      return `/img/productsorigins/${photo.filename}`
     }
-  }
+  },
 }, {
   underscored: true,
   timestamps: false

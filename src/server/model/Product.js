@@ -10,11 +10,7 @@ export default connection.define('Product', {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  laba: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-  },
-  harga: {
+  price: {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
@@ -32,12 +28,12 @@ export default connection.define('Product', {
   photo_url: {
     type: Sequelize.VIRTUAL,
     get: async function() {
-      let photo = await connection.models.Photo.findOne({where: {photo_id: this.get('photo_id')}})
+      let photo = await connection.models.Photo.findOne({where: {id: this.get('photo_id')}})
       
       if (!photo) return null
       return `/img/products/${photo.filename}`
     }
-  }
+  },
 }, {
   underscored: true,
   timestamps: false

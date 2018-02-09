@@ -1,0 +1,67 @@
+[
+  {
+    "key":0,
+    "name": "Kopi Dampit",
+    "place": "Malang",
+    "stock" : 130,
+    "description" : "Kopi Robusta Dampit adalah kopi yang juga populer di kalangan pencinta kopi di seluruh tanah air kita , dan diantara jenis kopi robusta daerah Dampit ini yang mempunyai lahan yang sangat luas dan cocok untuk ditanam kopi jenis robusta.Robusta Dampit ini cocok sekali diminum bersama sarapan anda , apalagi ditambahkan susu kental manis atau Gula secukupnya , kopi ini akan menjadikan hari anda berarti sebab tendangan kafeinnya akan membuat anda lebih berenergi."
+  },
+  {
+    "key":1,
+    "name": "Java Karlos",
+    "place": "Malang",
+    "stock" : 130,
+    "description" : "Kopi lokal Jawa Timur memang cukup terkenal tak hanya di kawasan Jawa Timur saja, tapi di berbagai daerah lainnya, bahkan beberapa kedai kopi di Jogja juga menyediakan menu single origin menggunakan Kopi Karlos yang ‘karlos’ merupakan singkatan dari Karangploso, karena kopi ini memang diolah dari Karangploso, Kabupaten Malang, Jawa Timur"
+  },
+  {
+    "key":2,
+    "name": "Kopi Lanang",
+    "place": "Malang",
+    "stock" : 130,
+    "description" : "Kopi Lanang asal malang ini merupakan kopi pilihan yang bisa membuat peminumnya merasakan tenaga ekstra. Yaitu tidak membuat mata mengantuk, dan yang paling penting adalah bisa menambah VITALITAS/STAMINA bagi yang meminumnya. Untuk mendapatkan kopi lanang, adalah melalui proses yang tidak mudah karena untuk mendapatkan biji kopi lanang harus melalui penyortiran biji kopi yang jumlahnya mencapai puluhan ribu biji kopi jenis robusta!. Jenis kopi ini termasuk istimewa, karena tidak seperti kopi biasanya yang berbiji ganda. Kopi ini berbiji tunggal alias monokotil. Bila biji kopi umumnya terbelah dua, namunbiji kopi lanang bulat dan tunggal."
+  },
+  {
+    "key":3,
+    "name": "Kopi Kandangan",
+    "place": "Madiun",
+    "stock" : 130,
+    "description" : "Kopi Kandangan merupakan kopi yang berasal dari Kabupaten Madiun, Jawa Timur yang masih sedikit sekali diketahui oleh kalangan pecinta kopi. Di Madiun, kopi merupakan minuman khas yang banyak dijumpai di warung warung, kedai minum bahkan hotel hotel dengan penyajian dan ciri khas kopi Madiun. Apalagi kabupaten Madiun merupakan salah satu daerah penghasil kopi di Jawa Timur yang terletak di wilayah Kandangan, kecamatan Kare, kabupaten Madiun"
+  },
+  {
+    "key":4,
+    "name": "Kopi Berontoseno",
+    "place": "Kediri",
+    "stock" : 130,
+    "description" : "Perusahaan Kopi Berontoseno telah berdiri sejak 1956 yang berlokasi di Kediri – Jawa Timur.Pada mulanya perusahaan ini hanya memproduksi KOPI BUBUK yang memiliki ciri khas dan keunggulan yaitu Terbuat dari 100% biji kopi pilihan kualitas terbaik.Pemakaian lebih hemat, cukup 3,5-4 gr kopi bubuk diseduh dengan 150 ml air mendidih. Butiran kopi sangat lembut dan mudah mengendap sehingga menyisakan sedikit sekali ampas.Pada tahun 1986 perusahaan memproduksi KOPI BOTOL, dan berkembang terus dengan diproduksinya KOPI CUP pada tahun 1990."
+  },
+  {
+    "key":5,
+    "name": "Kopi Hitam Cap Angkringan",
+    "place": "Kediri",
+    "stock" : 130,
+    "description" : "Kopi robusta yang dipasok dari kebun-kebun kopi di seputaran Jawa Tengah dijual dengan merek Kopi Tjap Angkring. Di bagian depan toko, di atas rak disusun bungkus-bungkus kopi dalam kemasan alumunium bergambar seorang lelaki bercelana pendek mengenakan topi caping, sedang membawa pikulan berisi teko kopi."
+ 
+  },
+  {
+    "key": 6,
+    "name" : "Kopi Menoreh",
+    "place" : "Sidoharjo",
+    "stock" : 130,
+    "description" : "Kopi Menoreh ini memiliki 3 jenis kopi, yakni kopi arabika, robusta dan lanang. Untuk masalah rasa tentunya tinggal bagaimana konsumen yang merasakan. Untuk arabika memiliki tingkat asam yang lebih tinggi, sedangkan robusta memilikir asa kopi yang netral seperti halnya kopi asli. Nah untuk kopi lanang itu adalah perpaduan antara Robusta dan arabika."
+  },
+  {
+    "key": 7,
+    "name" : "Kopai Osing",
+    "place": "Banyuwangi",
+    "stock" : 130,
+    "description" : "Kopai Osing adalah kopi nikmat andalan Kota Banyuwangi dan khususnya Desa Kemiren."
+
+  },
+  {
+    "key": 8,
+    "name" : "Kopi Java Ijen",
+    "place" : "Bondowoso",
+    "stock" : 130,
+    "description" : "Kopi Ijen atau disebut juga Java Ijen merupakan kopi yang berasal dari Gunung berapi aktif di perbatasan Banyuwangi dan Bondowoso yang berada di ketinggian 1000 – 1400 mdpl. Penanaman kopi didaerah ini konon sudah dimulai sejak abad ke-16 dan semakin dikembangkan karena permintaan yang cukup banyak untuk ekspor ke Amerika dan Eropa seperti Swiss. Hal ini dikarenakan rasa kopi Ijen yang sangat baik karena tumbuh didataran tinggi yang sangat subur dan pemrosesan setelah panen yang baik. Kopi asal Jawa sudah sangat terkenal sejak zaman dahulu hingga ada istilah, “a cup of java”."
+  }
+]

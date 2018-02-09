@@ -1,6 +1,6 @@
-webpackJsonp([1],{
+webpackJsonp([13],{
 
-/***/ 307:
+/***/ 309:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,11 +16,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(67);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-var _index = __webpack_require__(322);
+var _index = __webpack_require__(324);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -47,65 +43,42 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //COMPONENTS
 
 
-var PRODUCT_ORIGINS = ['Malang', 'Madiun', 'Bondowoso', 'Banyuwangi', 'Kediri', 'Sidoharjo'];
-
 //COMPONENT
+var Promo = function (_Component) {
+  _inherits(Promo, _Component);
 
-var Home = function (_Component) {
-  _inherits(Home, _Component);
+  function Promo() {
+    _classCallCheck(this, Promo);
 
-  function Home() {
-    _classCallCheck(this, Home);
-
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Promo.__proto__ || Object.getPrototypeOf(Promo)).apply(this, arguments));
   }
 
-  _createClass(Home, [{
-    key: 'renderProductOrigins',
-    value: function renderProductOrigins() {
-      return PRODUCT_ORIGINS.map(function (data, i) {
-        return _react2.default.createElement(
-          'div',
-          { className: _index2.default.origin, key: i },
-          _react2.default.createElement(
-            'span',
-            null,
-            data
-          )
-        );
-      });
-    }
-  }, {
+  _createClass(Promo, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         _TopBar2.default,
         {
-          relative: {
-            title: { cart: true },
-            search: { cart: false }
-          },
-
           fly: {
-            search: { cart: true },
-            mode: _TopBar.APPEAR
+            title: { cart: true },
+            mode: _TopBar.HIDE
           },
 
           isSelected: this.props.isSelected
         },
         _react2.default.createElement(
-          'div',
-          { className: _index2.default.container },
-          this.renderProductOrigins()
+          _RoundedButton2.default,
+          null,
+          'Open Search'
         )
       );
     }
   }]);
 
-  return Home;
+  return Promo;
 }(_react.Component);
 
-exports.default = Home;
+exports.default = Promo;
 
 /***/ }),
 
@@ -651,11 +624,11 @@ module.exports = {"container":"rounded-button--container--1JF5cQzQ"};
 
 /***/ }),
 
-/***/ 322:
+/***/ 324:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"container":"index--container--xsuZJ4hg","origin":"index--origin--3_409lSp"};
+module.exports = {"container":"index--container--Wp9ZDj63","content":"index--content--1Cv5PbIs"};
 
 /***/ })
 

@@ -10018,8 +10018,8 @@ module.exports = isArguments;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var END_POINT_URL = exports.END_POINT_URL = 'https://product-hub-testing.azurewebsites.net/graphql';
-var TOKEN = exports.TOKEN = 'react-boilerplate-token-address';
+var END_POINT_URL = exports.END_POINT_URL = 'http://localhost:3000';
+var TOKEN = exports.TOKEN = 'coffeehub-token';
 
 exports.default = {
   END_POINT_URL: END_POINT_URL,
@@ -21295,25 +21295,31 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var Home = (0, _AsyncComponent2.default)(function () {
-  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 307));
+  return __webpack_require__.e/* import() */(11).then(__webpack_require__.bind(null, 307));
 });
 var Favorite = (0, _AsyncComponent2.default)(function () {
-  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 308));
+  return __webpack_require__.e/* import() */(16).then(__webpack_require__.bind(null, 308));
 });
 var Promo = (0, _AsyncComponent2.default)(function () {
-  return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 309));
+  return __webpack_require__.e/* import() */(13).then(__webpack_require__.bind(null, 309));
 });
 var Chat = (0, _AsyncComponent2.default)(function () {
-  return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 310));
+  return __webpack_require__.e/* import() */(17).then(__webpack_require__.bind(null, 310));
 });
 var Account = (0, _AsyncComponent2.default)(function () {
-  return __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 311));
+  return __webpack_require__.e/* import() */(18).then(__webpack_require__.bind(null, 311));
 });
 var PageNotFound = (0, _AsyncComponent2.default)(function () {
-  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 312));
+  return __webpack_require__.e/* import() */(15).then(__webpack_require__.bind(null, 312));
 });
 var Search = (0, _AsyncComponent2.default)(function () {
-  return __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 313));
+  return __webpack_require__.e/* import() */(12).then(__webpack_require__.bind(null, 313));
+});
+var Products = (0, _AsyncComponent2.default)(function () {
+  return __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 366));
+});
+var Finish = (0, _AsyncComponent2.default)(function () {
+  return __webpack_require__.e/* import() */(14).then(__webpack_require__.bind(null, 400));
 });
 
 //STYLES
@@ -21420,7 +21426,9 @@ var AppRouter = function (_Component) {
           _react2.default.createElement(
             _reactRouterDom.Switch,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/search', component: Search })
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/finish', component: Finish }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/search', component: Search }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/products/:product_origin_id', component: Products })
           ),
           _react2.default.createElement(
             'section',

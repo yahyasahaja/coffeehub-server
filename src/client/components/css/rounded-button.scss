@@ -11,6 +11,8 @@
   cursor: pointer;
   transition: .3s;
   filter: none;
+  display: block;
+  text-align: center;
 
   &:active {
     opacity: .3;

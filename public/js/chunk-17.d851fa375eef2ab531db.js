@@ -1,6 +1,6 @@
-webpackJsonp([5],{
+webpackJsonp([17],{
 
-/***/ 311:
+/***/ 310:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _index = __webpack_require__(326);
+var _index = __webpack_require__(325);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -40,16 +40,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 //COMPONENT
-var Account = function (_Component) {
-  _inherits(Account, _Component);
+var Chat = function (_Component) {
+  _inherits(Chat, _Component);
 
-  function Account() {
-    _classCallCheck(this, Account);
+  function Chat() {
+    _classCallCheck(this, Chat);
 
-    return _possibleConstructorReturn(this, (Account.__proto__ || Object.getPrototypeOf(Account)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Chat.__proto__ || Object.getPrototypeOf(Chat)).apply(this, arguments));
   }
 
-  _createClass(Account, [{
+  _createClass(Chat, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -61,18 +61,18 @@ var Account = function (_Component) {
           }
         },
         _react2.default.createElement(
-          'h1',
+          'span',
           null,
-          'Account Example'
+          'Chat Example'
         )
       );
     }
   }]);
 
-  return Account;
+  return Chat;
 }(_react.Component);
 
-exports.default = Account;
+exports.default = Chat;
 
 /***/ }),
 
@@ -535,11 +535,11 @@ module.exports = {"container":"search-bar--container--2TlmOGdA","search":"search
 
 /***/ }),
 
-/***/ 326:
+/***/ 325:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"container":"index--container--29exuiON","content":"index--content--2FU4s6zh"};
+module.exports = {"container":"index--container--XmHwBL7x","content":"index--content--1mTQrtZh"};
 
 /***/ })
 

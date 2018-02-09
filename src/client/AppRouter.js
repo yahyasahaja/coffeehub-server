@@ -14,6 +14,8 @@ const Chat = asyncComponent(() => import('./screens/Chat'))
 const Account = asyncComponent(() => import('./screens/Account'))
 const PageNotFound = asyncComponent(() => import('./screens/PageNotFound'))
 const Search = asyncComponent(() => import('./screens/Search'))
+const Products = asyncComponent(() => import('./screens/Products'))
+const Finish = asyncComponent(() => import('./screens/Finish'))
 
 //STYLES
 import styles from './assets/css/app-router.scss'
@@ -93,10 +95,12 @@ class AppRouter extends Component {
           />
         </Switch>
         <Switch>
+          <Route path="/finish" component={Finish} />
           <Route path="/search" component={Search} />
+          <Route path="/products/:product_origin_id" component={Products} />
         </Switch>
 
-        <section>
+        <section> 
           <Snackbar
             action={this.props.snackbar.action}
             active={this.props.snackbar.active}

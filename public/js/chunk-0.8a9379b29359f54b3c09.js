@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 309:
+/***/ 307:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,13 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _index = __webpack_require__(324);
+var _axios = __webpack_require__(67);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _reactRouterDom = __webpack_require__(22);
+
+var _index = __webpack_require__(322);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -27,6 +33,10 @@ var _TopBar2 = _interopRequireDefault(_TopBar);
 var _RoundedButton = __webpack_require__(320);
 
 var _RoundedButton2 = _interopRequireDefault(_RoundedButton);
+
+var _Card = __webpack_require__(364);
+
+var _Card2 = _interopRequireDefault(_Card);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -43,42 +53,65 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //COMPONENTS
 
 
+var PRODUCT_ORIGINS = ['Malang', 'Madiun', 'Bondowoso', 'Banyuwangi', 'Kediri', 'Sidoharjo'];
+
 //COMPONENT
-var Promo = function (_Component) {
-  _inherits(Promo, _Component);
 
-  function Promo() {
-    _classCallCheck(this, Promo);
+var Home = function (_Component) {
+  _inherits(Home, _Component);
 
-    return _possibleConstructorReturn(this, (Promo.__proto__ || Object.getPrototypeOf(Promo)).apply(this, arguments));
+  function Home() {
+    _classCallCheck(this, Home);
+
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
   }
 
-  _createClass(Promo, [{
+  _createClass(Home, [{
+    key: 'renderProductOrigins',
+    value: function renderProductOrigins() {
+      return PRODUCT_ORIGINS.map(function (data, i) {
+        return _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: '/products/' + data, className: _index2.default.origin, key: i },
+          _react2.default.createElement(
+            'span',
+            null,
+            data
+          )
+        );
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         _TopBar2.default,
         {
-          fly: {
+          relative: {
             title: { cart: true },
-            mode: _TopBar.HIDE
+            search: { cart: false }
+          },
+
+          fly: {
+            search: { cart: true },
+            mode: _TopBar.APPEAR
           },
 
           isSelected: this.props.isSelected
         },
         _react2.default.createElement(
-          _RoundedButton2.default,
-          null,
-          'Open Search'
+          'div',
+          { className: _index2.default.container },
+          this.renderProductOrigins()
         )
       );
     }
   }]);
 
-  return Promo;
+  return Home;
 }(_react.Component);
 
-exports.default = Promo;
+exports.default = Home;
 
 /***/ }),
 
@@ -624,11 +657,127 @@ module.exports = {"container":"rounded-button--container--1JF5cQzQ"};
 
 /***/ }),
 
-/***/ 324:
+/***/ 322:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"container":"index--container--Wp9ZDj63","content":"index--content--1Cv5PbIs"};
+module.exports = {"container":"index--container--xsuZJ4hg","origin":"index--origin--3_409lSp"};
+
+/***/ }),
+
+/***/ 364:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(22);
+
+var _card = __webpack_require__(365);
+
+var _card2 = _interopRequireDefault(_card);
+
+var _RoundedButton = __webpack_require__(320);
+
+var _RoundedButton2 = _interopRequireDefault(_RoundedButton);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //MODULES
+
+
+//STYLES
+
+
+//COMPONENTS
+
+
+//COMPONENT
+var ProductOriginCard = function (_Component) {
+  _inherits(ProductOriginCard, _Component);
+
+  function ProductOriginCard() {
+    _classCallCheck(this, ProductOriginCard);
+
+    return _possibleConstructorReturn(this, (ProductOriginCard.__proto__ || Object.getPrototypeOf(ProductOriginCard)).apply(this, arguments));
+  }
+
+  _createClass(ProductOriginCard, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          img = _props.img,
+          title = _props.title,
+          stock = _props.stock,
+          price = _props.price,
+          link = _props.link;
+
+      return _react2.default.createElement(
+        'div',
+        { className: _card2.default.container },
+        _react2.default.createElement(
+          'div',
+          { className: _card2.default.image },
+          _react2.default.createElement('img', { src: img, alt: 'CardImage' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: _card2.default.content },
+          _react2.default.createElement(
+            'div',
+            { className: _card2.default.top },
+            _react2.default.createElement(
+              'span',
+              { className: _card2.default.title },
+              title
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: _card2.default.price },
+              'Rp ' + price + ',- / 100 gram'
+            )
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: _card2.default.stock },
+            stock / 1000.0 + ' kg'
+          ),
+          _react2.default.createElement(
+            _RoundedButton2.default,
+            { to: link, className: _card2.default.title },
+            'BUY'
+          )
+        )
+      );
+    }
+  }]);
+
+  return ProductOriginCard;
+}(_react.Component);
+
+exports.default = ProductOriginCard;
+
+/***/ }),
+
+/***/ 365:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"card--container--3EOoR8ZT","image":"card--image--qd7mXQ5s","content":"card--content--3jEfxHYf","top":"card--top--9--xXFqm","title":"card--title--3ujTYmCN","price":"card--price--3Gzr9AfE","stock":"card--stock--3bRsLSh3"};
 
 /***/ })
 

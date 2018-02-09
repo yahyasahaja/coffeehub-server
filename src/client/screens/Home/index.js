@@ -1,6 +1,7 @@
 //MODULES
 import React, { Component }  from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 //STYLES
 import styles from './css/index.scss'
@@ -8,6 +9,7 @@ import styles from './css/index.scss'
 //COMPONENTS
 import TopBar, { APPEAR } from '../../components/TopBar'
 import RoundedButton from '../../components/RoundedButton'
+import Card from '../../components/Card'
 
 let PRODUCT_ORIGINS = [
   'Malang',
@@ -22,9 +24,9 @@ let PRODUCT_ORIGINS = [
 export default class Home extends Component {
   renderProductOrigins() {
     return PRODUCT_ORIGINS.map((data, i) => (
-      <div className={styles.origin} key={i} >
+      <Link to={`/products/${data}`} className={styles.origin} key={i} >
         <span>{data}</span>
-      </div>
+      </Link>
     )) 
   }
 
@@ -32,7 +34,7 @@ export default class Home extends Component {
     return (
       <TopBar 
         relative={{
-          title: {cart: true},
+          title: {cart: true}, 
           search: {cart: false},
         }}
 

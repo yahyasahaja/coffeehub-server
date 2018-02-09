@@ -1,5 +1,5 @@
-export const END_POINT_URL =  'https://product-hub-testing.azurewebsites.net/graphql'
-export const TOKEN = 'react-boilerplate-token-address'
+export const END_POINT_URL =  'http://localhost:3000'
+export const TOKEN = 'coffeehub-token'
 
 export default {
   END_POINT_URL,

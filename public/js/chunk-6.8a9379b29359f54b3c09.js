@@ -1,6 +1,6 @@
-webpackJsonp([3],{
+webpackJsonp([6],{
 
-/***/ 308:
+/***/ 310:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _index = __webpack_require__(323);
+var _index = __webpack_require__(325);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -40,16 +40,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 //COMPONENT
-var Favorite = function (_Component) {
-  _inherits(Favorite, _Component);
+var Chat = function (_Component) {
+  _inherits(Chat, _Component);
 
-  function Favorite() {
-    _classCallCheck(this, Favorite);
+  function Chat() {
+    _classCallCheck(this, Chat);
 
-    return _possibleConstructorReturn(this, (Favorite.__proto__ || Object.getPrototypeOf(Favorite)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Chat.__proto__ || Object.getPrototypeOf(Chat)).apply(this, arguments));
   }
 
-  _createClass(Favorite, [{
+  _createClass(Chat, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -57,109 +57,22 @@ var Favorite = function (_Component) {
         {
           fly: {
             title: { cart: true },
-            mode: _TopBar.HIDE
-          },
-
-          isSelected: this.props.isSelected
+            mode: _TopBar.ABSOLUTE
+          }
         },
         _react2.default.createElement(
-          'h1',
+          'span',
           null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Disukai Example'
+          'Chat Example'
         )
       );
     }
   }]);
 
-  return Favorite;
+  return Chat;
 }(_react.Component);
 
-exports.default = Favorite;
+exports.default = Chat;
 
 /***/ }),
 
@@ -622,11 +535,11 @@ module.exports = {"container":"search-bar--container--2TlmOGdA","search":"search
 
 /***/ }),
 
-/***/ 323:
+/***/ 325:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"container":"index--container---7aTo5KM","content":"index--content--WXYCmU3S"};
+module.exports = {"container":"index--container--XmHwBL7x","content":"index--content--1mTQrtZh"};
 
 /***/ })
 

@@ -1,0 +1,23 @@
+.container {
+  display: block;
+  width: 100%;
+
+  .image {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding: 10px;
+    font-size: 12pt;
+
+    .total {
+      font-size: 15pt;
+      font-weight: bold;
+      color: #27ae60;
+    }
+  }
+}

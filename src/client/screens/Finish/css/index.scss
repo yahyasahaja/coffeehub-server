@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 100px;
+
+    span {
+      display: block;
+      font-size: 100pt;
+      transform: rotate(-30deg);
+    }
+  }
+}

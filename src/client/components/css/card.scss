@@ -1,0 +1,51 @@
+@import '../../assets/css/config.scss';
+
+.container {
+  width: 95%;
+  box-shadow: 0 2px 11px 0px #cccccc;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+
+  .image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding: 8px;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        font-size: 15pt;
+        font-weight: bold;
+      }
+
+      .price {
+        font-size: 12pt;
+        color: #27ae60;
+      }
+    }
+
+    .stock {
+      font-size: 11pt;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+}

@@ -101,7 +101,7 @@ module.exports = {
     */
     new SWPrecacheWebpackPlugin({
       filename: 'my-project-service-worker.js',
-      cacheId: 'CoffeeHub_2',
+      cacheId: 'CoffeeHub_3',
       mergeStaticsConfig: true,
     }),
     new HtmlWebpackPlugin({
